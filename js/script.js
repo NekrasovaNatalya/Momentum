@@ -9,18 +9,18 @@ function showTime() {
     const currentTime = date.toLocaleTimeString();
     time.textContent = currentTime;
     setTimeout(showTime, 1000);
-  }
-  showTime();
+}
+showTime();
 
-  const day = document.querySelector('.date');
+const day = document.querySelector('.date');
 
-  function showDate() {
+function showDate() {
     const date = new Date();
     const options = {month: 'long', day: 'numeric', weekday: 'long', timeZone: 'UTC'};
     const currentDate = date.toLocaleDateString('en-US', options);
     day.textContent = currentDate;
-  }
-  showDate();
+}
+showDate();
 
 //greeting
 
@@ -61,3 +61,37 @@ function getLocalStorage() {
   }
 }
 window.addEventListener('load', getLocalStorage);
+
+//slider
+
+let body = document.querySelector('body');
+const slideNext = document.querySelector('.slide-next');
+const slidePrev = document.querySelector('.slide-prev');
+let slideIndex = 1;
+let bgUrl = `url('assets/img/${timeOfDay}/${slideIndex}.jpg')`;
+
+function getSlideNext() {
+  slideIndex++;
+  bgUrl = `url('assets/img/${timeOfDay}/${slideIndex}.jpg')`;
+  body.style.backgroundImage = bgUrl;
+  if (slideIndex > 20) {
+    slideIndex = 1;
+    bgUrl = `url('assets/img/${timeOfDay}/${slideIndex}.jpg')`;
+    body.style.backgroundImage = bgUrl;
+  }
+}
+function getSlidePrev() {
+  slideIndex--;
+  bgUrl = `url('assets/img/${timeOfDay}/${slideIndex}.jpg')`;
+  body.style.backgroundImage = bgUrl;
+  console.log(bgUrl);
+  if (slideIndex < 1) {
+    slideIndex = 20;
+    bgUrl = `url('assets/img/${timeOfDay}/${slideIndex}.jpg')`;
+    body.style.backgroundImage = bgUrl;
+  }
+}
+body.style.backgroundImage = bgUrl;
+
+slideNext.addEventListener('click', getSlideNext);
+slidePrev.addEventListener('click', getSlidePrev);
