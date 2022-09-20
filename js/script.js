@@ -129,3 +129,23 @@ city.addEventListener('keypress', setCity);
 const changeQuote = document.querySelector('.change-quote');
 const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
+
+let quotes = [
+  "Tomorrow belongs to those who can hear it coming.",
+  "Sometimes it's not enough to know what things mean, sometimes you have to know what things don't mean.",
+  "Really good music isn't just to be heard, you know? It's almost like a hallucination.",
+  "I like the idea of being alone. I like the idea of often being alone in all aspects of my life. I like to feel lonely. I like to need things.",
+  "Music can always serve a role in people's lives when it's emotional and warm and inviting and beautiful.",
+  "I don't make changes to confuse anyone. I'm just searching. That's what causes me to change. I'm just searching for myself.",
+  "It matters not who you love, where you love, why you love, when you love or how you love, it matters only that you love.",
+  "The future is uncertain but the end is always near.",
+  "People are so brainwashed by the rules that they don't know what really matters.",
+  "You've got to believe in yourself, or no one will believe in you. Imagination is like a bird on the wing, flying free for you to use.",
+  "Those that have lived longer than us always have something to teach us, that we can take with us for the rest of our lives.",
+  "All art is unstable. Its meaning is not necessarily that implied by the author. There is no authoritative voice. There are only multiple readings.",
+  "We age not by holding on to youth, but by letting ourselves grow and embracing whatever youthful parts remain.",
+  "Live music is the most primal form of energy release you can share with other people besides having sex or taking drugs.",
+  "Excess is part of my nature. Dullness is a disease. I really need danger and excitement. I'm never scared of putting myself out on a limb.",
+  "Life is an adventure of our own design intersected by fate and a series of lucky and unlucky accidents.",
+  "Just another lonely broken hero picking up the pieces of my mind. Running out of faith and hope and reason, I'm running out of time.",
+];
