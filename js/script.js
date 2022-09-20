@@ -170,3 +170,14 @@ let authors = [
   "Ozzy Osbourne",
 ];
 
+quote.textContent = quotes[0];
+author.textContent = authors[0];
+
+function getQuotes() {
+  let quoteIndex = Math.floor(Math.random() * 17);
+  console.log(quoteIndex);
+  quote.textContent = quotes[quoteIndex];
+  author.textContent = authors[quoteIndex];
+}
+
+changeQuote.addEventListener('click', getQuotes);
