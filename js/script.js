@@ -149,3 +149,24 @@ let quotes = [
   "Life is an adventure of our own design intersected by fate and a series of lucky and unlucky accidents.",
   "Just another lonely broken hero picking up the pieces of my mind. Running out of faith and hope and reason, I'm running out of time.",
 ];
+
+let authors = [
+  "David Bowie",
+  "Bob Dylan",
+  "Iggy Pop",
+  "Robert Plant",
+  "Moby",
+  "David Bowie",
+  "John Lennon",
+  "Jim Morrison",
+  "Mick Jagger",
+  "Ozzy Osbourne",
+  "Johnny Cash",
+  "David Bowie",
+  "Keith Richards",
+  "Kurt Cobain",
+  "Freddie Mercury",
+  "Patti Smith",
+  "Ozzy Osbourne",
+];
+
