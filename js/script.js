@@ -126,14 +126,4 @@ city.addEventListener('keypress', setCity);
 
 //quotes
 
-const changeQuote = document.querySelector('.change-quote');
 
-async function getQuotes() {  
-  const quotes = 'data.json';
-  const res = await fetch(quotes);
-  const data = await res.json(); 
-  console.log(data);
-}
-getQuotes();
-
-// changeQuote.addEventListener('click', getQuotes);
