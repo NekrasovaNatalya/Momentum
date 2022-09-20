@@ -126,4 +126,6 @@ city.addEventListener('keypress', setCity);
 
 //quotes
 
-
+const changeQuote = document.querySelector('.change-quote');
+const quote = document.querySelector('.quote');
+const author = document.querySelector('.author');
