@@ -269,3 +269,7 @@ function playAudio() {
     isPlay = false;
   }
 }
+
+function toggleBtn() {
+  play.classList.toggle('pause');
+}
