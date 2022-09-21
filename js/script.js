@@ -308,3 +308,8 @@ function selectCurrentSong() {
     currentSong.classList.add('item-active');
   } 
 }
+
+play.addEventListener('click', playAudio);
+play.addEventListener('click', toggleBtn);
+playNext.addEventListener('click', getSongNext);
+playPrev.addEventListener('click', getSongPrev);
