@@ -239,3 +239,12 @@ playList.forEach((el, i) => {
   li.textContent = playList[i].title;
   playListContainer.append(li);
 });
+
+function getSongNext() {
+  songIndex++;
+  isPlay = false;
+  if (songIndex > 8) {
+    songIndex = 0;
+  }
+  playAudio();
+}
