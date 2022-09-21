@@ -228,3 +228,14 @@ const playList = [
     src: 'assets/sounds/Dodo.mp3',
   },
 ];
+let songIndex = 0;
+let songName = -1;
+
+playList.forEach((el, i) => {
+  let li = document.createElement('li');
+  songName++;
+  li.classList.add(`song-${songName}`);
+  li.classList.add('play-item');
+  li.textContent = playList[i].title;
+  playListContainer.append(li);
+});
