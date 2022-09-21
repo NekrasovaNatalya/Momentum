@@ -181,3 +181,50 @@ function getQuotes() {
 }
 
 changeQuote.addEventListener('click', getQuotes);
+
+//player
+
+let isPlay = false;
+const playListContainer = document.querySelector('.player');
+const play = document.querySelector('.play');
+const playNext = document.querySelector('.play-next');
+const playPrev = document.querySelector('.play-prev');
+const audio = new Audio();
+const playList = [
+  {      
+    title: 'Moonage Daydream',
+    src: 'assets/sounds/Moonage Daydream.mp3',
+  },  
+  {      
+    title: 'Guardian Angel',
+    src: 'assets/sounds/Guardian Angel.mp3',
+  },
+  {      
+    title: 'Mr. Blue Sky',
+    src: 'assets/sounds/Mr. Blue Sky.mp3',
+  },
+  {      
+    title: 'Out Of Time',
+    src: 'assets/sounds/Out Of Time.mp3',
+  },
+  {      
+    title: 'Surrender',
+    src: 'assets/sounds/Surrender.mp3',
+  },
+  {      
+    title: 'The Circle Game',
+    src: 'assets/sounds/The Circle Game.mp3',
+  },
+  {      
+    title: 'White Room',
+    src: 'assets/sounds/White Room.mp3',
+  },
+  {      
+    title: 'Dicke Titten',
+    src: 'assets/sounds/Dicke Titten.mp3',
+  },
+  {      
+    title: 'Dodo',
+    src: 'assets/sounds/Dodo.mp3',
+  },
+];
