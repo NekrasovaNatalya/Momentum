@@ -248,3 +248,12 @@ function getSongNext() {
   }
   playAudio();
 }
+
+function getSongPrev() {
+  songIndex--;
+  isPlay = false;
+  if (songIndex < 0) {
+    songIndex = 8;
+  }
+  playAudio();
+}
