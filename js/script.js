@@ -273,3 +273,38 @@ function playAudio() {
 function toggleBtn() {
   play.classList.toggle('pause');
 }
+
+function selectCurrentSong() {
+  let inactive = Array.from(document.querySelectorAll('.play-item'));
+  inactive.forEach (item => {
+    item.classList.remove('item-active');
+  });
+  if (songIndex === 0) {
+    let currentSong = document.querySelector('.song-0');
+    currentSong.classList.add('item-active');
+  } else if (songIndex === 1) {
+    let currentSong = document.querySelector('.song-1');
+    currentSong.classList.add('item-active');
+  } else if (songIndex === 2) {
+    let currentSong = document.querySelector('.song-2');
+    currentSong.classList.add('item-active');
+  } else if (songIndex === 3) {
+    let currentSong = document.querySelector('.song-3');
+    currentSong.classList.add('item-active');
+  } else if (songIndex === 4) {
+    let currentSong = document.querySelector('.song-4');
+    currentSong.classList.add('item-active');
+  } else if (songIndex === 5) {
+    let currentSong = document.querySelector('.song-5');
+    currentSong.classList.add('item-active');
+  } else if (songIndex === 6) {
+    let currentSong = document.querySelector('.song-6');
+    currentSong.classList.add('item-active');
+  } else if (songIndex === 7) {
+    let currentSong = document.querySelector('.song-7');
+    currentSong.classList.add('item-active');
+  } else if (songIndex === 8) {
+    let currentSong = document.querySelector('.song-8');
+    currentSong.classList.add('item-active');
+  } 
+}
