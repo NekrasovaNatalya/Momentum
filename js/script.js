@@ -257,3 +257,15 @@ function getSongPrev() {
   }
   playAudio();
 }
+
+function playAudio() {
+  selectCurrentSong();
+  audio.src = playList[songIndex].src;
+  if (isPlay == false) {
+    audio.play();
+    isPlay = true;
+  } else {
+    audio.pause();
+    isPlay = false;
+  }
+}
