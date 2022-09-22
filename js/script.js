@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 
 //time
 
@@ -84,7 +84,6 @@ function getSlidePrev() {
   slideIndex--;
   bgUrl = `url('assets/img/${timeOfDay}/${slideIndex}.jpg')`;
   body.style.backgroundImage = bgUrl;
-  console.log(bgUrl);
   if (slideIndex < 1) {
     slideIndex = 20;
     bgUrl = `url('assets/img/${timeOfDay}/${slideIndex}.jpg')`;
@@ -102,6 +101,7 @@ const weatherIcon = document.querySelector('.weather-icon');
 const temperature = document.querySelector('.temperature');
 const weatherDescription = document.querySelector('.weather-description');
 const city = document.querySelector('.city');
+city.value = 'moscow';
 
 async function getWeather() {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&lang=en&appid=a628dcdff6ce0aa348f87ec0c7579546&units=metric`;
