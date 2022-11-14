@@ -1,4 +1,5 @@
-// 'use strict'
+
+window.addEventListener('DOMContentLoaded', function () {
 
 //time
 
@@ -175,7 +176,6 @@ author.textContent = authors[0];
 
 function getQuotes() {
   let quoteIndex = Math.floor(Math.random() * 17);
-  console.log(quoteIndex);
   quote.textContent = quotes[quoteIndex];
   author.textContent = authors[quoteIndex];
 }
@@ -306,10 +306,11 @@ function selectCurrentSong() {
   } else if (songIndex === 8) {
     let currentSong = document.querySelector('.song-8');
     currentSong.classList.add('item-active');
-  } 
+  }
 }
 
 play.addEventListener('click', playAudio);
 play.addEventListener('click', toggleBtn);
 playNext.addEventListener('click', getSongNext);
 playPrev.addEventListener('click', getSongPrev);
+});
