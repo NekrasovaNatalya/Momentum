@@ -1,6 +1,4 @@
 
-window.addEventListener('DOMContentLoaded', function () {
-
 //time
 
 const time = document.querySelector('.time');
@@ -314,4 +312,4 @@ play.addEventListener('click', playAudio);
 play.addEventListener('click', toggleBtn);
 playNext.addEventListener('click', getSongNext);
 playPrev.addEventListener('click', getSongPrev);
-});
+
