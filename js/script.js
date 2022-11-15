@@ -1,4 +1,6 @@
 
+window.addEventListener('DOMContentLoaded', function () {
+
 //time
 
 const time = document.querySelector('.time');
@@ -66,7 +68,8 @@ window.addEventListener('load', getLocalStorage);
 let body = document.querySelector('body');
 const slideNext = document.querySelector('.slide-next');
 const slidePrev = document.querySelector('.slide-prev');
-let slideIndex = 1;
+const randomNumberInRange = (min = 0, max = 20) => Math.floor(Math.random() * (max - min + 1)) + min;
+let slideIndex = randomNumberInRange();
 let bgUrl = `url('assets/img/${timeOfDay}/${slideIndex}.jpg')`;
 
 function getSlideNext() {
@@ -311,4 +314,4 @@ play.addEventListener('click', playAudio);
 play.addEventListener('click', toggleBtn);
 playNext.addEventListener('click', getSongNext);
 playPrev.addEventListener('click', getSongPrev);
-
+});
